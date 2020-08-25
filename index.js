@@ -1,13 +1,9 @@
 const express = require('express');
-var cors = require('cors');
+const cors = require('cors');
 const path = require('path');
 
 const app = express();
-app.use(cors())
 
-app.get('/api/helloworld', (req, res) => {
-  res.json({sayHi: 'hello from server, nice to meet you!'})
-})
 // Serve the static files from the React app
 app.use(express.static(path.join(__dirname, 'client/build')));
 
