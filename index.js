@@ -17,7 +17,7 @@ app.use(express.static(path.join(__dirname, 'client/build')));
 
 // An api endpoint that returns a short list of items
 app.get('/api/getList', (req,res) => {
-  var list = ["thanln", "Thanln123", "Thanln1245"];
+  var list = ["thanln", "Thanln123", "Thanln1245", "NGUYEN VAN DONG"];
 res.json(list);
 console.log('Sent list of items');
 });
